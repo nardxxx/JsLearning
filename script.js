@@ -81,31 +81,52 @@ Promt
 
 
 Оператор с плюсом(+) перед строкой, превращает её в числовой тип данных;
-*const someString = +"strings";
-*console.log(typeof (someString));
+* const someString = +"strings";
+* console.log(typeof (someString));
 
 Баг js
-*@return(object) - null;
-*console.log(typeof (null));
+* @return(object) - null;
+* console.log(typeof (null));
 
 
-*let name = "boris";
+* let name = "boris";
 
 Обычная конкантинация
-*console.log("His name is " + name);
+* console.log("His name is " + name);
 
 Интерполяция; работает только с косыми кавычками `
-*console.log(`His name is ${name}`);
+* console.log(`His name is ${name}`);
 
-*const test = prompt('kavo?', 'menya');
-*console.log(`vibrali ${test}`);
+* const test = prompt('kavo?', 'menya');
+* console.log(`vibrali ${test}`);
+
+
+* let tcheslavie = 10;
+* for (let i = 1; i <= tcheslavie; i++) {
+* 	console.log("not enought");
+* }
+
+
+Если знаем что результат будет число то превращаем строку в число через+;
+
+Ставим +, потому что в ответе будет число, а prompt() возваращает строку(string);
+*const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?', '');
+
+*const personalMovieDB = {
+*	count: +numberOfFilms,
+*	movies: {},
+*	actors: {},
+*	genres: [],
+*	privat: false
+*};
+
+*const
+*	lastFilm = prompt('Один из последних просмотренных фильмов ?', ''),
+*	rate = prompt('На сколько оцените его ?', '');
+
+Данные в обьект передаем через [] из-за поддержки браузеров и кирилиццы.
+*personalMovieDB.movies[lastFilm] = rate;
+
+*console.log(personalMovieDB);
 
 */
-let tcheslavie = 10;
-for (let i = 1; i <= tcheslavie; i++) {
-	console.log("not enought");
-
-	if () {
-		break;
-	}
-}

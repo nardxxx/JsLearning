@@ -120,7 +120,7 @@ Promt
 *	privat: false
 *};
 
-*const
+* const
 *	lastFilm = prompt('Один из последних просмотренных фильмов ?', ''),
 *	rate = prompt('На сколько оцените его ?', '');
 
@@ -129,4 +129,78 @@ Promt
 
 *console.log(personalMovieDB);
 
+
+* const
+* 	illya = 14,
+* 	lonya = 11;
+*
+* let jojo = (illya > lonya) ? console.log("Illya older than Lonya") : console.log("Lonya is older than Illya");
+
+
+const babushkaMasha = 68;
+
+В конструкции switch/case, идет строгое сравнение в отличии от обычных условий e.g не может быть case 14 > 68
+switch (babushkaMasha) {
+	case 14:
+		console.log("Too young");
+		break;
+	case 90:
+		console.log("Too old");
+		break;
+	case 68:
+		console.log("You damn right");
+		break;
+	default:
+		console.log("Idk");
+}
 */
+
+
+/* Задание на урок:
+
+1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+
+2) Сделать так, чтобы пользователь не мог:
+ a)оставить ответ в виде пустой строки;
+ b)отменить ответ или ввести название фильма длинее, чем 50 символов.
+Если это происходит - возвращаем пользователя к вопросам опять
+
+3) При помощи условий проверить  personalMovieDB.count, если он:
+  a)меньше 10 - вывести сообщение "Просмотрено довольно мало фильмов";
+  b)от 10 до 30 - "Вы классический зритель";
+  c)больше - "Вы киноман";
+  d)не подошло ни к одному варианту - "Произошла ошибка".
+
+4) Потренироваться и переписать цикл еще двумя способами*/
+
+
+// // Код возьмите из предыдущего домашнего задания
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?', '');
+
+// const personalMovieDB = {
+// 	count: +numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false
+// };
+
+// if (personalMovieDB.count < 10) {
+// 	console.log("Просмотрено довольно мало фильмов");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 	console.log("Вы классический зритель");
+// } else {
+// 	console.log("Вы киноман");
+// }
+
+// for (let i = 0; i < 2; i++) {
+// 	let lastFilm = prompt('Один из последних просмотренных фильмов ?', '');
+// 	if (lastFilm == null && lastFilm == '') {
+// 		i--;
+// 	} else {
+// 		personalMovieDB.movies[lastFilm] = 'da';
+// 	}
+// }
+// console.log(personalMovieDB);
+// // personalMovieDB.movies[lastFilm] = rate;
+

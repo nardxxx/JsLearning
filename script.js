@@ -490,5 +490,5 @@ const obj = {
 };
 
 obj.arr.forEach(function (item, key, obj.arr) {
-
+	console.log(``);
 });
